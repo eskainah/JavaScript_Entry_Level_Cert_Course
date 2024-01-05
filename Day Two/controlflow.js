@@ -63,7 +63,7 @@ if (hour < 10 || hour > 18){
 }
  */
 
-let hour = 9
+/* let hour = 9
 let isWeekend = true;
 if (hour < 10 || hour > 18 || isWeekend){
     document.write("The Office is Close <br/>");
@@ -80,5 +80,15 @@ document.write(firstName || lastName|| nickName || "Anonymous");
 //short-circuit
 
 true || document.write("not printed");
-false || document.write("<br/>printed");
+false || document.write("<br/>printed"); */
 
+
+//&& Operator 
+let hour = 12
+let minute = 30;
+if (hour ==12 && minute ==30){
+    document.write("The Office is Close for lunch break<br/>");
+
+}
+
+document.write(1 && 2 && 3);
