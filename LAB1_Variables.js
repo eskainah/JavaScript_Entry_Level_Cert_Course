@@ -12,4 +12,5 @@ console.log(secondPersonName, secondPersonPhone, secondPersonEmail);
 let thirdPersonName = "Helen Richards";
 let thirdPersonPhone = "0800 1111";
 let thirdPersonEmail = "libero@convallis.edu";
-console.log(thirdPersonName, thirdPersonPhone, thirdPersonEmail);
+//The below section is calling a varible
+document.write(`${thirdPersonName} ${thirdPersonPhone} ${thirdPersonEmail}`);
