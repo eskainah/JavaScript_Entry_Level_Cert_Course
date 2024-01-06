@@ -117,7 +117,7 @@ Another string – show “Wrong password”,
 For an empty string or cancelled input, show “Canceled”
 The schema (Image 001)
  */
-let username = prompt("Who is there?");
+/* let username = prompt("Who is there?");
 
 if (username === "Admin"){
     let password = prompt("Please enter your Password");
@@ -174,3 +174,21 @@ allowAccess = (age < 3)? "Hi, Baby!" :
       (a + b < 4) ?
             result = "Below" : result = "over";
             document.write("<br/>", result);
+ */
+
+    //Switch Statements
+
+    let dean = prompt("Please Enter your Department");
+
+    switch(dean){
+        case "Computer":
+        document.write("Dr. Hussien");
+        break
+
+        case "Business":
+        document.write("Dr. Ada");
+        break
+    default:
+        document.write("Please Visit Studdent Affairs");
+        break
+    }
