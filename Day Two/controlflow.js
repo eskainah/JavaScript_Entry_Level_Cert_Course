@@ -94,7 +94,7 @@ if (hour ==12 && minute ==30){
 document.write(1 && 2 && 3); */
 
 
-
+/* 
 let age = 15;
 
 if(age >=14 && age <=90){
@@ -104,7 +104,7 @@ age = 10
 if (!(age >=14 && age <=90))
 {
     document.write(`<br/>Please try again your age is ${age}`);
-}
+} */
 /***
  * Write the code which asks for a login with prompt.
 
@@ -140,3 +140,37 @@ else if(username === "")
 else{
     alert("Wrong Username");
 }
+
+// the question mark operator
+let age = 15;
+let allowAccess = age > 18 ? true : false;
+document.write(allowAccess)
+
+//mutltiple question mark operator
+allowAccess = (age < 3)? "Hi, Baby!" : 
+              (age < 18) ? "Hello, Teenager" :
+              (age < 100) ? "You are an adult" : 
+                            "what an unusual age";
+            document.write("<br/>", allowAccess); 
+
+ let company = "Netscape";
+
+ (company == "Netscape") ? 
+        document.write("<br/>Right") : document.write("<br/>Wrong...")
+
+    //using if statement 
+    if (company == 'Netscape') {
+        document.write("<br/>Right");
+      } else {
+        document.write("<br/>Wrong...")
+      }
+
+      if ("0"){
+        document.write("<br/>Hello")
+      }
+
+      let result, a = 3, b = 4;
+
+      (a + b < 4) ?
+            result = "Below" : result = "over";
+            document.write("<br/>", result);
