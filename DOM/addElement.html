@@ -17,8 +17,15 @@
       const content = document.createElement('div');
       content.classList.add('content');
       content.textContent = 'This is the glorious text-content!';
-    
+      content
       container.appendChild(content);
+
+      const pTxt = document.createElement('P');
+      pTxt.classList.add('pTxt');
+      pTxt.textContent = "Hey, I'am red!";
+      pTxt.style.color = 'red';
+      
+      container.appendChild(pTxt);
     </script>
   </body>
 </html>
