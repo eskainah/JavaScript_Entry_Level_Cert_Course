@@ -50,12 +50,17 @@
             const listBtn = document.querySelector('button');
 
             //append to parent element
-            list.appendChild(listTxt, listBtn);
+            listItem.appendChild(listTxt);
             listTxt.textContent = inputValue;
             listBtn.textContent = "Delete";
+            listItem.appendChild(listBtn);
 
-            
+            list.appendChild(listItem)
 
+            //delete list item
+            listBtn.addEventListener('click', ()=>{
+                list.remove(listItem);
+            });
         });
         
     </script>
