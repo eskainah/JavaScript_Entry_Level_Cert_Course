@@ -44,10 +44,13 @@
             const inputValue = input.value;
             input.value = "";
 
+            //Create three new elements 
             const listItem = document.createElement('li');
             const listTxt= document.querySelector('span');
-            const listbtn = document.querySelector('button');
+            const listBtn = document.querySelector('button');
 
+            //append to parent element
+            list.appendChild(listTxt, listBtn);
         });
         
     </script>
