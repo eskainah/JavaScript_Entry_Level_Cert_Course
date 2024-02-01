@@ -42,12 +42,12 @@
 
             //store value of current input
             const inputValue = input.value;
-            input.value = "";
+            input.value = '';
 
             //Create three new elements 
             const listItem = document.createElement('li');
-            const listTxt= document.querySelector('span');
-            const listBtn = document.querySelector('button');
+            const listTxt= document.createElement('span');
+            const listBtn = document.createElement('button');
 
             //append to parent element
             listItem.appendChild(listTxt);
@@ -59,8 +59,9 @@
 
             //delete list item
             listBtn.addEventListener('click', ()=>{
-                list.remove(listItem);
+                list.removeChild(listItem);
             });
+            input.focus();
         });
         
     </script>
