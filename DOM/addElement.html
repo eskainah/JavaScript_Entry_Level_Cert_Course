@@ -32,9 +32,26 @@
 
       container.appendChild(head);
 
+     
+      const blackBorder = document.createElement('div');
+      blackBorder.setAttribute('style', "border: solid black; background: pink")
+      container.appendChild(blackBorder)
+
+      const newDiv = document.createElement("H1");
+      newDiv.textContent = "I’m in a div"
       
+      const newDivP = document.createElement("P");
+      newDivP.textContent = "ME TOO"
+
+      blackBorder.appendChild(newDiv)
+      blackBorder.appendChild(newDivP)
+
+
+      
+
 
 
     </script>
   </body>
 </html>
+
