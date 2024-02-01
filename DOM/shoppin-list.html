@@ -33,12 +33,17 @@
     <script>
         //create variables
         const list = document.querySelector('ul');
-        const inputs = document.querySelector('input');
-        const buttons = document.querySelector('button');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
 
         //click event when button is click
-        buttons.addEventListener('click', ()=>{
-            document.write("Thank You");
+        button.addEventListener('click', ()=>{
+            //document.write("Thank You");
+
+            //store value of current input
+            const inputValue = input.value;
+            input.value =""
+
         });
         
     </script>
