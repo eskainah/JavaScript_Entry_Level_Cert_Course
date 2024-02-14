@@ -6,6 +6,28 @@
     <title>Multiply Numeric PPt</title>
 </head>
 <body>
-    
+   <script>
+    /**
+     * Create a function multiplyNumeric(obj) 
+     * that multiplies all numeric property values of obj by 2.
+     */
+     let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    function multiplyNumeric(menu){
+        for(item in menu){
+            if(typeof menu[item] == "number"){
+                menu[item] *= 2;
+                document.write(item)
+            }
+            document.write(" ", menu[item], "<br>")
+        }
+    }
+    multiplyNumeric(menu)
+
+   </script> 
 </body>
 </html>
